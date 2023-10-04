@@ -34,7 +34,7 @@ function createData(form, sourceSystem, date) {
 const rows = [
   createData("TDS", "SAP","21/02/23"),
   createData("Reimbursement Slips", "SAP","21/02/23"),
-  createData("Ledger", "50%", "Submitted","21/02/23"),
+  createData("Ledger", "SAP","21/02/23"),
 ];
 
 export const Report = () => {
