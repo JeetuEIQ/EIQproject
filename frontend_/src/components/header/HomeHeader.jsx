@@ -74,7 +74,7 @@ export const HomeHeader = () => {
               Forms
             </Typography>
           </Link>
-          <Link style={{ textDecoration: "none" }}>
+          <Link to={"/reporting"} style={{ textDecoration: "none" }}>
             <Typography
               color={"white"}
               textAlign={"center"}
