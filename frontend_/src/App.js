@@ -10,6 +10,7 @@ import { Reporting } from './components/reporting/Reporting';
 import { DirectorForm } from './components/directorForm/DirectorForm';
 import { Investments } from './components/investments/Investments';
 import { AddFamily } from './components/addFamily/AddFamily';
+import { Family } from './components/addFamily/Family';
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/director-form" element={<DirectorForm/>}/>
           <Route path="/investments-details" element={<Investments/>}/>
           <Route path="/add-family" element={<AddFamily/>}/>
+          <Route path="/family" element={<Family/>}/>
         </Routes>
       
       </BrowserRouter>

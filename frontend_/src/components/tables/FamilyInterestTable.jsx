@@ -7,9 +7,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { Box, Button, Typography } from "@mui/material";
-
-import AddIcon from '@mui/icons-material/Add';
+import { Box,} from "@mui/material";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -29,26 +27,22 @@ function createData(
   relation,
   name,
   pan,
-  email,
-  phone,
-  dob
+  shareHolding,
 ) {
   return {
     relation,
     name,
     pan,
-    email,
-    phone,
-    dob
+    shareHolding,
   };
 }
 
 const rows = [
-  createData("Brother", "ABC", "QNCPA8192J", "abc@gmail.com", "97201 17209","05/02/2019"),
+  createData("Brother", "ABC", "QNCPA8192J", "Yes"),
 
 ];
 
-export const FamilyTable = () => {
+export const FamilyInterestTable = () => {
   return (
     <>
       <Box
@@ -61,7 +55,7 @@ export const FamilyTable = () => {
         alignItems={"center"}
       >
         {/* Table */}
-        <Box width={"100%"}  minHeight={"90%"} display={"flex"} flexDirection={"column"}  justifyContent={"flex-start"} paddingTop={"70px"} alignItems={"center"} gap={4}>
+        <Box width={"100%"} minHeight={"90%"} display={"flex"} flexDirection={"column"}  justifyContent={"flex-start"} paddingTop={"70px"} alignItems={"center"} gap={4}>
 
           <TableContainer component={Paper} sx={{ minWidth: 300}}>
             <Table aria-label="customized table">
@@ -71,13 +65,7 @@ export const FamilyTable = () => {
                   <StyledTableCell align="left">Name</StyledTableCell>
                   <StyledTableCell align="left">Pan</StyledTableCell>
                   <StyledTableCell align="left">
-                    Email
-                  </StyledTableCell>
-                  <StyledTableCell align="left">
-                    Phone
-                  </StyledTableCell>
-                  <StyledTableCell align="left">
-                   DOB
+                    Share Holding
                   </StyledTableCell>
                 </TableRow>
               </TableHead>
@@ -94,13 +82,7 @@ export const FamilyTable = () => {
                       {row.pan}
                     </StyledTableCell>
                     <StyledTableCell align="left">
-                      {row.email}
-                    </StyledTableCell>
-                    <StyledTableCell align="left">
-                      {row.phone}
-                    </StyledTableCell>
-                    <StyledTableCell align="left">
-                      {row.dob}
+                      {row.shareHolding}
                     </StyledTableCell>
                   </StyledTableRow>
                 ))}
