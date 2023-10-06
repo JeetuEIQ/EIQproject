@@ -57,15 +57,14 @@ export const FamilyTable = () => {
         gap={5}
         display={"flex"}
         flexDirection={"column"}
+        justifyContent={"center"}
+        alignItems={"center"}
       >
-        <Box width={"100%"} height={"10%"}>
-          <Typography variant="h4">Director Form</Typography>
-        </Box>
         {/* Table */}
-        <Box width={"100%"} minHeight={"90%"} display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"flex-start"} gap={4}>
-            <Button variant="outlined" startIcon={<AddIcon/>} sx={{border:"1px solid black", color:"black"}}>Add</Button>
-          <TableContainer component={Paper} sx={{ minWidth: 700 }}>
-            <Table sx={{ minWidth: 700 }} aria-label="customized table">
+        <Box width={"100%"} minHeight={"90%"} display={"flex"} flexDirection={"column"}  justifyContent={"flex-start"} paddingTop={"70px"} alignItems={"center"} gap={4}>
+
+          <TableContainer component={Paper} sx={{ minWidth: 300}}>
+            <Table aria-label="customized table">
               <TableHead>
                 <TableRow>
                   <StyledTableCell align="left">Relation</StyledTableCell>

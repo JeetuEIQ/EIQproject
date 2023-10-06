@@ -37,7 +37,7 @@ export const AddFamily = () => {
             </Box>
 
             {/* Right Side */}
-            <Box width={"55%"}  height={"100%"}>
+            <Box width={"60%"}  height={"100%"}>
                 <FamilyTable/>
             </Box>
         </Box>
