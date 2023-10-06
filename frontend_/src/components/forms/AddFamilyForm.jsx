@@ -1,0 +1,90 @@
+import { Typography, Box, TextField, MenuItem, Button } from "@mui/material";
+import React from "react";
+import AddIcon from '@mui/icons-material/Add';
+export const AddFamilyForm = () => {
+  return (
+    <>
+      <Box minHeight={"10%"}>
+        <Typography variant="h4">Personal Information</Typography>
+      </Box>
+      {/* Mid */}
+      <form>
+        <Box
+          width={"100%"}
+          display={"flex"}
+          flexWrap={"wrap"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+          gap={6}
+        >
+          <Box minWidth={"100%"}>
+            <Box>
+              <label htmlFor="">Relation</label>
+            </Box>
+            <TextField defaultValue={"spouce"}  select size="small" fullWidth >
+            <MenuItem value="spouce">Spouce</MenuItem>
+            <MenuItem value="father/step-father">Father / Step-Father</MenuItem>
+            <MenuItem value="mother/step-father">Mother / Step-Mother</MenuItem>
+            <MenuItem value="son">Son</MenuItem>
+            <MenuItem value="son's wife">Son's Wife</MenuItem>
+            <MenuItem value="daughter">Daughter</MenuItem>
+            <MenuItem value="daughter's husband">Daughter's Husband</MenuItem>
+            <MenuItem value="sister/step-sister">Sister / Step-Sister</MenuItem>
+            <MenuItem value="dependent">Dependent</MenuItem>
+            <MenuItem value="other">Other Material Financial Relationship</MenuItem>
+            </TextField>
+          </Box>
+
+          <Box minWidth={"100%"}>
+            <Box>
+              <label htmlFor="">Name</label>
+            </Box>
+            <TextField size="small" fullWidth />
+          </Box>
+          <Box width={"100%"}>
+            <Box>
+              <label htmlFor="">PAN</label>
+            </Box>
+            <TextField size="small" fullWidth />
+          </Box>
+          <Box width={"100%"}>
+            <Box>
+              <label htmlFor="">Email</label>
+            </Box>
+            <TextField size="small" fullWidth />
+          </Box>
+          <Box width={"100%"}>
+            <Box>
+              <label htmlFor="">Phone</label>
+            </Box>
+            <TextField size="small" fullWidth />
+          </Box>
+          <Box width={"100%"}>
+            <Box>
+              <label htmlFor="">Date</label>
+            </Box>
+            <TextField type="date" size="small" fullWidth />
+          </Box>
+
+            {/* Bottom */}
+          <Box display={"flex"} justifyContent={"flex-end"} width={"100%"}>
+            <Button
+              variant="outlined"
+              size="large"
+              sx={{
+                width: "30%",
+                marginBottom: "30px",
+                color: "black",
+                border: "1px solid black",
+              }}
+              startIcon={<AddIcon/>}
+            >
+              Add
+            </Button>
+          </Box>
+        </Box>
+
+      </form>
+    </>
+  );
+};

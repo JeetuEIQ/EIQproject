@@ -41,7 +41,7 @@ export const HomeHeader = () => {
               Master
             </Typography>
           </Link>
-          <Link style={{ textDecoration: "none" }}>
+          <Link to={"/add-family"} style={{ textDecoration: "none" }}>
             <Typography
               color={"white"}
               textAlign={"center"}

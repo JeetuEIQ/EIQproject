@@ -9,6 +9,7 @@ import { Personal } from './components/directorMaster/Personal';
 import { Reporting } from './components/reporting/Reporting';
 import { DirectorForm } from './components/directorForm/DirectorForm';
 import { Investments } from './components/investments/Investments';
+import { AddFamily } from './components/addFamily/AddFamily';
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
           <Route path="/reporting" element={<Reporting/>}/>
           <Route path="/director-form" element={<DirectorForm/>}/>
           <Route path="/investments-details" element={<Investments/>}/>
+          <Route path="/add-family" element={<AddFamily/>}/>
         </Routes>
       
       </BrowserRouter>
