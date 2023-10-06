@@ -52,7 +52,7 @@ export const HomeHeader = () => {
               Master
             </Typography>
           </Link>
-          <Link style={{ textDecoration: "none" }}>
+          <Link to={"/investments-details"} style={{ textDecoration: "none" }}>
             <Typography
               color={"white"}
               textAlign={"center"}

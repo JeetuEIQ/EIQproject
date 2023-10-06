@@ -27,8 +27,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   //   height:60
 }));
 
-function createData(form, sourceSystem, date) {
-  return { form, sourceSystem, date};
+function createData(form, status, submittedOn) {
+  return { form, status, submittedOn};
 }
 
 const rows = [
@@ -43,15 +43,6 @@ const rows = [
 ];
 
 export const DirectorFormTable = () => {
-  const navigate = useNavigate();
-
-  const handleView = () => {
-    navigate("/personal");
-  };
-
-  const handleEdit = () => {
-    navigate("/personal");
-  };
   return (
     <>
       <Box width={"90%"} height={"100%"} gap={5} display={"flex"} flexDirection={"column"}>
@@ -69,7 +60,7 @@ export const DirectorFormTable = () => {
                 <TableRow>
                   <StyledTableCell align="left">Form</StyledTableCell>
                   <StyledTableCell align="left">Actions</StyledTableCell>
-                  <StyledTableCell align="left">Source System</StyledTableCell>
+                  <StyledTableCell align="left">Status</StyledTableCell>
                   <StyledTableCell align="left">Submitted On</StyledTableCell>
                   <StyledTableCell align="left">Audit Trial</StyledTableCell>
                 </TableRow>
@@ -113,10 +104,10 @@ export const DirectorFormTable = () => {
                       </Box>
                     </StyledTableCell>
                     <StyledTableCell align="left">
-                      <Typography>{row.sourceSystem}</Typography>
+                      <Typography>{row.status}</Typography>
                     </StyledTableCell>
                     <StyledTableCell align="left">
-                        <Typography>{row.date}</Typography>
+                        <Typography>{row.submittedOn}</Typography>
                     </StyledTableCell>
                     <StyledTableCell align="left">
                             <Box display={"flex"} gap={2} justifyContent={"center"} alignItems={"center"} > 
