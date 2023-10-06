@@ -7,6 +7,7 @@ import { Home } from './components/home/Home';
 import { Overview } from './components/directorMaster/Overview';
 import { Personal } from './components/directorMaster/Personal';
 import { Reporting } from './components/reporting/Reporting';
+import { DirectorForm } from './components/directorForm/DirectorForm';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/personal" element={<Personal/>}/>
           <Route path="/home" element={<Home/>}/>
           <Route path="/reporting" element={<Reporting/>}/>
+          <Route path="/director-form" element={<DirectorForm/>}/>
         </Routes>
       
       </BrowserRouter>

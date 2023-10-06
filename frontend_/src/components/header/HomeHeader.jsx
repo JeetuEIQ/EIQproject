@@ -63,7 +63,7 @@ export const HomeHeader = () => {
               Details
             </Typography>
           </Link>
-          <Link style={{ textDecoration: "none" }}>
+          <Link to={"/director-form"} style={{ textDecoration: "none" }}>
             <Typography
               color={"white"}
               textAlign={"center"}
