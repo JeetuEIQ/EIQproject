@@ -67,7 +67,7 @@ export const DirectorFormTable = () => {
               </TableHead>
               <TableBody>
                 {rows.map((row) => (
-                  <StyledTableRow key={row.from}>
+                  <StyledTableRow key={row.form}>
                     <StyledTableCell component="th" scope="row">
                       {row.form}
                     </StyledTableCell>
